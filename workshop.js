@@ -1,0 +1,43 @@
+$('document').ready(
+    ()=>{
+        $('svg').hide();
+
+        $("#sred").click(()=>
+        {
+          //  alert("red");
+            $(".red").show();
+            $(".black").hide();
+            $(".green").hide();
+            $(".yellow").hide();
+        })
+        $("#sblack").click(()=>
+        {
+            $(".red").hide();
+            $(".black").show();
+            $(".green").hide();
+            $(".yellow").hide();
+        })
+        $("#sgreen").click(()=>
+        {
+            $(".red").hide();
+            $(".black").hide();
+            $(".green").show();
+            $(".yellow").hide();
+        })
+        $("#syellow").click(()=>
+        {
+            $(".red").hide();
+            $(".black").hide();
+            $(".green").hide();
+            $(".yellow").show();
+        })
+        $("#showall").click(()=>
+        {
+            $(".red").show();
+            $(".black").show();
+            $(".green").show();
+            $(".yellow").show();
+        })
+
+    }
+)
